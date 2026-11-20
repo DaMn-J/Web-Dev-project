@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Ninja</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+
+    
+    <div class="menu-side">
+
+      
+      <header class="topbar">
+        <div class="logo">🥷 Food <span>Ninja</span></div>
+        <input type="text" id="searchBox" placeholder="Search menu here">
+        <button id="openCart" class="cart-btn">🛒 <span id="cartCount">0</span></button>
+      </header>
+
+      
+      <h2 class="heading">Menu Category</h2>
+      <div class="categories" id="categories">
+        <button class="cat-btn active" data-cat="All">All</button>
+        <button class="cat-btn" data-cat="Desserts">Desserts</button>
+        <button class="cat-btn" data-cat="Beverages">Beverages</button>
+        <button class="cat-btn" data-cat="Fast Food">Fast Food</button>
+        <button class="cat-btn" data-cat="Breakfast">Breakfast</button>
+        <button class="cat-btn" data-cat="Healthy">Healthy Options</button>
+      </div>
+
+      
+      <div class="products" id="productList"></div>
+      <p id="noResult" class="no-result">No items found. Try another search.</p>
+    </div>
+
+    
+    <aside class="cart-side" id="cartPanel">
+      <div class="cart-header">
+        <h2>My Cart</h2>
+        <button id="closeCart" class="close-btn">✕</button>
+      </div>
+
+      <div id="cartItems" class="cart-items"></div>
+
+      <div class="summary">
+        <div class="row"><span>Subtotal</span><span id="subtotal">$0.00</span></div>
+        <div class="row"><span>Service Charge (5%)</span><span id="service">$0.00</span></div>
+        <div class="row total"><span>Total</span><span id="total">$0.00</span></div>
+      </div>
+
+      <button id="checkoutBtn" class="checkout">Checkout</button>
+    </aside>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
